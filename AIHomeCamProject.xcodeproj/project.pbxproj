@@ -6,27 +6,49 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B46C440D2E838C07000E5ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46C44052E838C07000E5ACD /* Assets.xcassets */; };
+		D6A2791C8706EB315878378B /* Pods_AIHomeCamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF42830A45184A02490A6D9 /* Pods_AIHomeCamProject.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		0AF42830A45184A02490A6D9 /* Pods_AIHomeCamProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIHomeCamProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2322BDC0A26B461ECE7BA6ED /* Pods-AIHomeCamProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIHomeCamProject.release.xcconfig"; path = "Target Support Files/Pods-AIHomeCamProject/Pods-AIHomeCamProject.release.xcconfig"; sourceTree = "<group>"; };
 		B46C43EC2E838BAE000E5ACD /* AIHomeCamProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIHomeCamProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46C44052E838C07000E5ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B46C44062E838C07000E5ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C144FEE787FC69EC4604C654 /* Pods-AIHomeCamProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIHomeCamProject.debug.xcconfig"; path = "Target Support Files/Pods-AIHomeCamProject/Pods-AIHomeCamProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B46C43FE2E838BB0000E5ACD /* Exceptions for "AIHomeCamProject" folder in "AIHomeCamProject" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B46C43EB2E838BAE000E5ACD /* AIHomeCamProject */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B46C43EE2E838BAE000E5ACD /* AIHomeCamProject */ = {
+		B46C44332E8390BD000E5ACD /* Apps */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B46C43FE2E838BB0000E5ACD /* Exceptions for "AIHomeCamProject" folder in "AIHomeCamProject" target */,
-			);
-			path = AIHomeCamProject;
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		B46C44382E8390C1000E5ACD /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B46C443A2E8390C5000E5ACD /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B46C443D2E8390C7000E5ACD /* Presentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B46C44432E8390CA000E5ACD /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B46C44472E8390CD000E5ACD /* Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -36,17 +58,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A2791C8706EB315878378B /* Pods_AIHomeCamProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83F3AB024CBC320F80AA8E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AF42830A45184A02490A6D9 /* Pods_AIHomeCamProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90FA9BBA5AEFE17FB3137C81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C144FEE787FC69EC4604C654 /* Pods-AIHomeCamProject.debug.xcconfig */,
+				2322BDC0A26B461ECE7BA6ED /* Pods-AIHomeCamProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B46C43E32E838BAE000E5ACD = {
 			isa = PBXGroup;
 			children = (
-				B46C43EE2E838BAE000E5ACD /* AIHomeCamProject */,
+				B46C44092E838C07000E5ACD /* AIHomeCamProject */,
 				B46C43ED2E838BAE000E5ACD /* Products */,
+				90FA9BBA5AEFE17FB3137C81 /* Pods */,
+				83F3AB024CBC320F80AA8E04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +100,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B46C44092E838C07000E5ACD /* AIHomeCamProject */ = {
+			isa = PBXGroup;
+			children = (
+				B46C44472E8390CD000E5ACD /* Domain */,
+				B46C44432E8390CA000E5ACD /* Data */,
+				B46C443D2E8390C7000E5ACD /* Presentation */,
+				B46C443A2E8390C5000E5ACD /* Resources */,
+				B46C44382E8390C1000E5ACD /* Core */,
+				B46C44332E8390BD000E5ACD /* Apps */,
+				B46C44052E838C07000E5ACD /* Assets.xcassets */,
+				B46C44062E838C07000E5ACD /* Info.plist */,
+			);
+			path = AIHomeCamProject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,20 +122,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B46C43FF2E838BB0000E5ACD /* Build configuration list for PBXNativeTarget "AIHomeCamProject" */;
 			buildPhases = (
+				08231946FD0CE43CC14C992D /* [CP] Check Pods Manifest.lock */,
 				B46C43E82E838BAE000E5ACD /* Sources */,
 				B46C43E92E838BAE000E5ACD /* Frameworks */,
 				B46C43EA2E838BAE000E5ACD /* Resources */,
+				16C1D7DB45C77FEECEAFD3CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B46C43EE2E838BAE000E5ACD /* AIHomeCamProject */,
+				B46C44332E8390BD000E5ACD /* Apps */,
+				B46C443D2E8390C7000E5ACD /* Presentation */,
 			);
 			name = AIHomeCamProject;
-			packageProductDependencies = (
-			);
 			productName = AIHomeCamProject;
 			productReference = B46C43EC2E838BAE000E5ACD /* AIHomeCamProject.app */;
 			productType = "com.apple.product-type.application";
@@ -122,10 +180,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46C440D2E838C07000E5ACD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08231946FD0CE43CC14C992D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIHomeCamProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16C1D7DB45C77FEECEAFD3CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIHomeCamProject/Pods-AIHomeCamProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIHomeCamProject/Pods-AIHomeCamProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIHomeCamProject/Pods-AIHomeCamProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B46C43E82E838BAE000E5ACD /* Sources */ = {
@@ -140,6 +245,7 @@
 /* Begin XCBuildConfiguration section */
 		B46C44002E838BB0000E5ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C144FEE787FC69EC4604C654 /* Pods-AIHomeCamProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -150,9 +256,8 @@
 				INFOPLIST_FILE = AIHomeCamProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -161,17 +266,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hgjwilly.AIHomeCamProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B46C44012E838BB0000E5ACD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2322BDC0A26B461ECE7BA6ED /* Pods-AIHomeCamProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -182,9 +292,8 @@
 				INFOPLIST_FILE = AIHomeCamProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -193,12 +302,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hgjwilly.AIHomeCamProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -240,7 +353,7 @@
 				DEVELOPMENT_TEAM = B8UX843ZWU;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -304,7 +417,7 @@
 				DEVELOPMENT_TEAM = B8UX843ZWU;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

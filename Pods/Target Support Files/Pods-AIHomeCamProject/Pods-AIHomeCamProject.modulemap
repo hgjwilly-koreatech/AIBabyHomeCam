@@ -1,0 +1,6 @@
+framework module Pods_AIHomeCamProject {
+  umbrella header "Pods-AIHomeCamProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
