@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C43A13B2EC962AC00F9D314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C43A1382EC962AC00F9D314 /* AppDelegate.swift */; };
+		7C43A13C2EC962AC00F9D314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C43A1392EC962AC00F9D314 /* SceneDelegate.swift */; };
+		7C43A13F2EC9630900F9D314 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C43A13E2EC9630900F9D314 /* HomeTabBarController.swift */; };
 		B46C440D2E838C07000E5ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46C44052E838C07000E5ACD /* Assets.xcassets */; };
 		D6A2791C8706EB315878378B /* Pods_AIHomeCamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF42830A45184A02490A6D9 /* Pods_AIHomeCamProject.framework */; };
 /* End PBXBuildFile section */
@@ -14,44 +17,14 @@
 /* Begin PBXFileReference section */
 		0AF42830A45184A02490A6D9 /* Pods_AIHomeCamProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIHomeCamProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2322BDC0A26B461ECE7BA6ED /* Pods-AIHomeCamProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIHomeCamProject.release.xcconfig"; path = "Target Support Files/Pods-AIHomeCamProject/Pods-AIHomeCamProject.release.xcconfig"; sourceTree = "<group>"; };
+		7C43A1382EC962AC00F9D314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C43A1392EC962AC00F9D314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7C43A13E2EC9630900F9D314 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		B46C43EC2E838BAE000E5ACD /* AIHomeCamProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIHomeCamProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46C44052E838C07000E5ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46C44062E838C07000E5ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C144FEE787FC69EC4604C654 /* Pods-AIHomeCamProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIHomeCamProject.debug.xcconfig"; path = "Target Support Files/Pods-AIHomeCamProject/Pods-AIHomeCamProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B46C44332E8390BD000E5ACD /* Apps */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Apps;
-			sourceTree = "<group>";
-		};
-		B46C44382E8390C1000E5ACD /* Core */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Core;
-			sourceTree = "<group>";
-		};
-		B46C443A2E8390C5000E5ACD /* Resources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		B46C443D2E8390C7000E5ACD /* Presentation */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		B46C44432E8390CA000E5ACD /* Data */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Data;
-			sourceTree = "<group>";
-		};
-		B46C44472E8390CD000E5ACD /* Domain */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Domain;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B46C43E92E838BAE000E5ACD /* Frameworks */ = {
@@ -65,6 +38,139 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C43A11F2EC9629200F9D314 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C43A1202EC9629200F9D314 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7C43A1212EC9629200F9D314 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		7C43A1222EC9629200F9D314 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7C43A11F2EC9629200F9D314 /* Model */,
+				7C43A1202EC9629200F9D314 /* Repository */,
+				7C43A1212EC9629200F9D314 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7C43A1232EC9629800F9D314 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		7C43A1242EC9629800F9D314 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		7C43A1252EC9629800F9D314 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7C43A1262EC9629800F9D314 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7C43A1272EC9629800F9D314 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7C43A1232EC9629800F9D314 /* DTOs */,
+				7C43A1242EC9629800F9D314 /* MockService */,
+				7C43A1252EC9629800F9D314 /* Repository */,
+				7C43A1262EC9629800F9D314 /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7C43A12D2EC962A200F9D314 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7C43A13D2EC962F100F9D314 /* Tabbar */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7C43A1312EC962A400F9D314 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7C43A1322EC962A400F9D314 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C43A1312EC962A400F9D314 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C43A1342EC962A700F9D314 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7C43A1352EC962A700F9D314 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		7C43A1362EC962A700F9D314 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7C43A1342EC962A700F9D314 /* Extensions */,
+				7C43A1352EC962A700F9D314 /* Workers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7C43A13A2EC962AC00F9D314 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				7C43A1382EC962AC00F9D314 /* AppDelegate.swift */,
+				7C43A1392EC962AC00F9D314 /* SceneDelegate.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		7C43A13D2EC962F100F9D314 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				7C43A13E2EC9630900F9D314 /* HomeTabBarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		83F3AB024CBC320F80AA8E04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +209,12 @@
 		B46C44092E838C07000E5ACD /* AIHomeCamProject */ = {
 			isa = PBXGroup;
 			children = (
-				B46C44472E8390CD000E5ACD /* Domain */,
-				B46C44432E8390CA000E5ACD /* Data */,
-				B46C443D2E8390C7000E5ACD /* Presentation */,
-				B46C443A2E8390C5000E5ACD /* Resources */,
-				B46C44382E8390C1000E5ACD /* Core */,
-				B46C44332E8390BD000E5ACD /* Apps */,
+				7C43A1222EC9629200F9D314 /* Domain */,
+				7C43A1272EC9629800F9D314 /* Data */,
+				7C43A12D2EC962A200F9D314 /* Presentation */,
+				7C43A1322EC962A400F9D314 /* Resources */,
+				7C43A1362EC962A700F9D314 /* Core */,
+				7C43A13A2EC962AC00F9D314 /* Apps */,
 				B46C44052E838C07000E5ACD /* Assets.xcassets */,
 				B46C44062E838C07000E5ACD /* Info.plist */,
 			);
@@ -131,10 +237,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B46C44332E8390BD000E5ACD /* Apps */,
-				B46C443D2E8390C7000E5ACD /* Presentation */,
 			);
 			name = AIHomeCamProject;
 			productName = AIHomeCamProject;
@@ -237,6 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C43A13B2EC962AC00F9D314 /* AppDelegate.swift in Sources */,
+				7C43A13F2EC9630900F9D314 /* HomeTabBarController.swift in Sources */,
+				7C43A13C2EC962AC00F9D314 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hgjwilly.AIHomeCamProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgjwilly.AIHomeCamProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -299,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hgjwilly.AIHomeCamProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgjwilly.AIHomeCamProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
